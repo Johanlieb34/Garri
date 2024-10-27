@@ -44,7 +44,7 @@ bot.on('message', (msg) => {
                 bot.restrictChatMember(chatId, username, {
                     can_send_messages: true
                 }).then(() => {
-                    bot.sendMessage(chatId, `${username} has been unmuted.`);
+                    bot.sendMessage(chatId, `{username} has been unmuted.`);
                 }).catch((error) => {
                     bot.sendMessage(chatId, 'Error unmuting user: ' + error.message);
                 });
