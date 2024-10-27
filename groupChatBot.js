@@ -4,7 +4,6 @@ const GroupChatBot = require('./botModule');
 const token = '7847521628:AAHn0CiVxcWZF2mG0leMLzRTsCS134xz0PE';
 
 const bot = new GroupChatBot(token);
-const bot = new TelegramBot(token, { polling: true });
 
 // Listen for any kind of message in a group chat
 bot.on('message', (msg) => {
